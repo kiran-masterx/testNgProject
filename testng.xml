@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="My Test Suite">
+	<listeners>
+		<listener class-name="utils.ExtentReportManager" />
+	</listeners>
+	<test thread-count="5" name="Test" parallel="none"></test>
+	<test name="Regression Test">
+		<classes>
+			<class name="testCases.loginPageTestCases" />
+			<class name="testCases.adminPageTestCases" />
+			<class name="testCases.leavePageTestCases" />
+		</classes>
+	</test>
+
+</suite> <!-- 
+Elements Explanation:
+
+- suite: Root element, defines the test suite.
+- name: Test suite name.
+- parallel: Execution mode (none, methods, classes, or instances).
+- thread-count: Number of threads for parallel execution.
+- test: Test element, contains classes to be executed.
+- name: Test name.
+- classes: List of classes to be executed.
+- class: Individual class element, specifies the class name.
+-->
