@@ -32,16 +32,23 @@ public class adminPageTestCases extends baseClass {
 		admin.createAdmin();
 		admin.verifyAdminCreatedWithSuccess();
 	}
-	
+
 	@Test
 	public void sampleTest() {
 		System.out.println("This is sample from adminpage");
 	}
-	
+
 	@Test
 	public void sampleTest2() {
 		System.out.println("This is sample from adminpage for failed test case");
-		int i = 10/0;
+		int i = 10 / 0;
+		System.out.println(i);
+	}
+
+	@Test
+	public void sampleTest3() {
+		System.out.println("This is sample from adminpage for failed test case");
+		int i = 10 / 0;
 		System.out.println(i);
 	}
 
